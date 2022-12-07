@@ -5,22 +5,29 @@ operator.*/
 using namespace std;
 
 class Opoverloading{
-    int a, b;
-    friend Opoverloading operator +(Opoverloading obj1,  ){
-        Opoverloading temp;
-        temp.a = a+obj.b;
-        return temp;
-    }
+    int a;
+    friend Opoverloading operator +(Opoverloading obj1, Opoverloading obj2);
     public:
-        void setData(int a, int b){
+        void setData(int a){
             this->a = a;
-            this->b = b;
+        }
+        void display(){
+            cout<<a;
         }
 
 };
 
+Opoverloading operator +(Opoverloading obj1, Opoverloading obj2){
+    Opoverloading temp;
+        temp.a = obj1.a + obj2.a;
+        return temp;
+}
+
 int main(){
-    Opoverloading x, y;
-    x.
+    Opoverloading x, y, z;
+    x.setData(7);
+    y.setData(9);
+    z = x+y;
+    z.display();
     return 0;
 }
