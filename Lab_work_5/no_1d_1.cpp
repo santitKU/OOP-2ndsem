@@ -15,7 +15,7 @@ class Animal {
 class Dog : public Animal {
    public:
     void bark() {
-        cout << "I am a Dog. Woof woof." << endl;
+        cout << "I am a Dog." << endl;
     }
 };
 
@@ -23,7 +23,7 @@ class Dog : public Animal {
 class Cat : public Animal {
    public:
     void meow() {
-        cout << "I am a Cat. Meow." << endl;
+        cout << "I am a Cat." << endl;
     }
 };
 
@@ -40,4 +40,4 @@ int main() {
     cat1.info();  // Parent Class function
     cat1.meow();
 
-    return 0;
+    return 0;}

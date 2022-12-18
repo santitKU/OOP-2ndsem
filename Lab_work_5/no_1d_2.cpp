@@ -1,3 +1,4 @@
+//hierarchical inheritance
 #include<iostream>
 
 using namespace std;
